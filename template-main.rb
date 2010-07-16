@@ -10,6 +10,8 @@ file '.rvmrc', <<-FILE
 rvm 1.9.2@#{@app_name}
 FILE
 
+run "cd /#{@app_name}"
+
 run "#{@gemset} gem install highline"
 
 run 'rm public/javascripts/controls.js'
