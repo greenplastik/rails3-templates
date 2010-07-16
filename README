@@ -1,0 +1,12 @@
+Rails 3 Template
+
+This is an early effort to create a quick and easy way to set up a customized Rails 3 app with whatever gems you might need.
+
+As of right now the generator makes the following assumptions:
+
+1. You have RVM installed;
+2. You have Ruby version 1.9.2 installed;
+3. You have Rails 3 installed; and
+4. You will want to use JQuery as your Javascript library.
+
+Some of this is based on the templates created by Tactivestylus (https://gist.github.com/280196/5c075f4a3d3a4118d1d706fce07e40572a3873c7)
