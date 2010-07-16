@@ -4,7 +4,7 @@ require 'highline/import'
 @app_name = ask("What is the name of your app?") { |q| q.validate = /[a-zA-Z]/ }
 
 @gemset = "rvm 1.9.2@#{@app_name}"
-run "rvm use --create #{@gemset}"
+run "rvm use --create 1.9.2@#{@app_name}"
 
 file '.rvmrc', <<-FILE
 rvm 1.9.2@#{@app_name}
