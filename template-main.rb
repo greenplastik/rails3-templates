@@ -69,9 +69,9 @@ FILE
 if auth
   devise_model = ask("\n\r\n\rWhat do you want to call your user model?\n\r\n\rExample: User. Press Enter to select the default (User):") { |q| q.validate = /[a-zA-Z]/ }
 
-  if devise_model.blank? 
+  if devise_model.blank?
     devise_model = "User"
-  else 
+  else
     devise_model = devise_model.humanize
   end
 
@@ -154,7 +154,7 @@ if factory_girl
 end
 
 if rspec && factory_girl
-  application  <<-GENERATORS 
+  application  <<-GENERATORS
   config.generators do |g|
     g.test_framework  :rspec, :fixture => true, :views => false
     g.fixture_replacement :factory_girl, :dir => "spec/support/factories"
@@ -200,7 +200,7 @@ run 'rake db:migrate'
 
 if agree("Add welcome screen ?"){ |q| q.default = "Yes" }
   run "rails generate nifty:scaffold Welcome show"
-  route "root :to => 'welcome#show'" 
+  route "root :to => 'welcome#show'"
 end
 
 run 'rm README'
