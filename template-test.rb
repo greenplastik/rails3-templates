@@ -24,7 +24,7 @@ if factory_girl
 end
 
 if rspec && factory_girl
-  application  <<-GENERATORS 
+  application  <<-GENERATORS
   config.generators do |g|
     g.test_framework  :rspec, :fixture => true, :views => false
     g.fixture_replacement :factory_girl, :dir => "spec/support/factories"
